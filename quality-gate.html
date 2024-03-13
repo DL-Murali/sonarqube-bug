@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample HTML File with Issues, Duplicate Lines, and Bugs</title>
+</head>
+<body>
+  <h1>Welcome to Sample HTML File</h1>
+  <p>This is a sample HTML file used for testing purposes.</p>
+
+  <!-- Introducing issues -->
+  <h2>Issues Section</h2>
+  <ul>
+    <li>This is a missing closing tag for a div.</div></li>
+    <li><a href="#">Link with missing href attribute</a></li>
+    <li><img src="image.jpg" alt="Missing alt attribute"></li>
+    <li>Unescaped ampersand in URL: <a href="https://example.com/?q=1&lang=en">Example</a></li>
+    <li>Incorrect HTML element: <h3>This is a heading</h3></li>
+  </ul>
+
+  <!-- Introducing duplicate lines -->
+  <h2>Duplicate Lines Section</h2>
+  <pre>
+    <code>
+      function helloWorld() {
+          console.log('Hello, World!');
+          console.log('Hello, World!'); // Duplicate line
+      }
+    </code>
+  </pre>
+
+  <!-- Introducing bugs -->
+  <h2>Bugs Section</h2>
+  <script>
+    // Intentional bugs in JavaScript code
+    let x = 10;
+    if (x = 5) {
+        console.log("x is 5");
+    }
+  </script>
+</body>
+</html>
